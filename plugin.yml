@@ -1,0 +1,9 @@
+name: BlockChanger
+main: me.insanj.BlockChanger.BlockChanger
+author: insanj
+version: 1.1
+commands:
+  BlockChanger:
+    description: Makes all blocks damaged set to wool.
+    permissions: BlockChanger.use
+    usage: /<command>
