@@ -1,9 +1,9 @@
 package me.insanj.BlockChanger;
 
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockDamageEvent;
-import org.bukkit.event.block.BlockListener;
 
-public class BlockChangerListener extends BlockListener
+public class BlockChangerListener implements Listener
 {
 	
 	public static BlockChanger plugin;
