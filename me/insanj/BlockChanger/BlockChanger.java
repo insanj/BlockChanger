@@ -11,7 +11,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -30,7 +29,7 @@ public class BlockChanger extends JavaPlugin
 	{
 		log.info("[BlockChanger] has been enabled!");
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvent(Event.Type.BLOCK_DAMAGE, blockListener, Event.Priority.Normal, this );
+		pm.registerEvents(this.blockListener, this)
 		setupPermissions();
 	}
 	
